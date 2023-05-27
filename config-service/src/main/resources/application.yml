@@ -1,0 +1,21 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:
+    config:
+      server: 
+        git:
+          uri: https://github.com/oscarhs123/config-data.git
+          search-paths: api
+          default-label: "master"
+          
+  security:
+    user:
+      name: root
+      password: holahola
+
+
+
+
+
